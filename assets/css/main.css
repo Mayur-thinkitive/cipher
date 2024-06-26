@@ -199,7 +199,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #6565EE;
   }
 
   .navmenu .dropdown ul {
@@ -236,13 +236,13 @@ h6 {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #6565EE;
   }
 
   .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
-    visibility: visible;
+    visibility: visible;  
   }
 
   .navmenu .dropdown .dropdown ul {
@@ -327,7 +327,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #6565EE;
   }
 
   .navmenu .active i,

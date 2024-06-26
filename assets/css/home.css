@@ -8,7 +8,7 @@
     background-color: rgba(101, 101, 238, 1);
     color: #fff!important;
     padding: 8px 15px !important;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .hero h1 {
@@ -28,11 +28,10 @@
     background-size: cover;
 }
 .login-btn {
-    border: 1px solid #6565EE;
+    
     color: #6565EE;
     padding: 8px 15px !important;
-    border-radius: 20px;
-    margin: 0px 15px;
+    /* margin: 0px 15px; */
 }
 .get-btn {
     border: 1px solid #6565EE;
@@ -70,11 +69,10 @@
   }
 @media (min-width: 600px) {
     .login-btn {
-        border: 1px solid #6565EE;
+       
         color: #6565EE;
-        padding: 8px 15px !important;
-        border-radius: 20px;
-        margin:  10px!important;
+        padding: 10px 20px !important;
+        /* margin:  10px!important; */
     }
     .navmenu a .purple-btn {
         padding: 10px 20px !important;
