@@ -90,6 +90,12 @@
      .main .slider .slider-img img {
         margin: 10px!important;
     }
+    .topbar {
+        padding :30px;
+    }
+    .topbar-content {
+        text-align: -webkit-center;
+    }
   }
 
 /* chat-icon */
