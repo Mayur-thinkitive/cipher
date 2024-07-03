@@ -13,3 +13,20 @@ document.addEventListener('DOMContentLoaded', function()
        );
     });
 });
+
+
+
+educt
+function showFeature(featureNumber)
+ {
+  var allFeatures = document.querySelectorAll('.feature');
+  allFeatures.forEach(function(feature) 
+  {
+feature.style.display='none';
+  });
+  var selectedFeature =document.getElementById('feature'+featureNumber);
+  if (selectedFeature) 
+  {
+    selectedFeature.style.display='block';
+  }
+}

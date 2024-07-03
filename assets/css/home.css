@@ -36,29 +36,33 @@
 .get-btn {
     border: 1px solid #6565EE;
     color: #6565EE;
-    padding: 8px 15px !important;
-    border-radius: 20px;
+    padding: 10px 16px !important;
+    border-radius: 8px;
     margin-right: 15px;
+    font-weight: 600;
 }
 .get-btn:hover {
     border: 1px solid #6565EE;
     color: #ffffff;
     background-color: #6565EE;
-    padding: 8px 15px !important;
-    border-radius: 20px;
+    padding: 10px 16px !important;
+    border-radius: 8px;
     margin-right: 15px;
+    font-weight: 600;
 }
 .request-btn {
     color: #ffffff;
     background-color: #6565EE;
-    padding: 10px 15px;
-    border-radius: 20px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
 }
 .request-btn:hover {
     color: #ffffff;
     background-color: #6565EE;
-    padding: 10px 15px;
-    border-radius: 20px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
 }
 .slider-img {
     display: flex;
@@ -67,6 +71,17 @@
     color: #2D2D82;
     font-weight: 600;
   }
+  .login-class {
+    color:#4848A9 !important;
+  }
+  .slider-img .slider-icon{
+    align-self: center;
+}
+.slider-gif {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
 @media (min-width: 600px) {
     .login-btn {
        
@@ -94,6 +109,7 @@
     .topbar-content {
         text-align: -webkit-center;
     }
+ 
   }
 
 /* chat-icon */
@@ -313,25 +329,27 @@
     padding: 0px 10px;
     float: right;
 }
-.footer-img img {
+/* .footer-img img {
     height: 60px;
-}
+} */
 @media (max-width: 768px) {
-   .footer-cls {
-
-   }
+   
    .footer .copyright {
     text-align: -webkit-center;
 }
+.navmenu a{
+        margin: 0px 10px;
+    }
 }   
 
+
 .Why-Choose-Cipher-Section{
-    padding: 50px 0px;
     background-color: #CFCFFA;
+    padding: 50px;
 }
 .title-content-card {
     border-radius: 25px;
-    margin: 0px 10px;
+    margin: 0px 5px;
     margin-bottom: 20px;    
 }
 .title-content-card .card-body{
@@ -343,4 +361,216 @@
 
 .card-text {
     color: #727397;
+}
+.check-circle p {
+    font-size: 12px;
+    color: #394E6B;
+}
+.trust-title h6 {
+   color:#3D3B54;
+   font-size: 18px;
+}
+.cipher-title p{
+  color:#3D3B54;
+  font-size: 18px;
+}
+.title-content-card {
+    color:#3D3B54;
+    font-size: 16px;
+}
+
+.title-content-card h5{
+    color:#2A2A64;
+    font-weight: 600;
+}
+
+/* FAQs-section */
+.FAQs-section {
+    margin: 50px 0px;
+}
+.faqs p{
+  color: #727397;
+  font-size: 16px;
+}
+
+
+.FAQs-section  .accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: var(--bs-body-bg);
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: #fff;
+    border-bottom: 1px solid #D8E0EA;
+    --bs-accordion-active-color: var(--bs-primary-text-emphasis);
+    --bs-accordion-active-bg: #EDECF4;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #D8E0EA;
+}
+.accordion-collapse {
+    background-color: #EDECF4;
+}
+
+.accordion-button:not(.collapsed) {
+   
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #EDECF4;
+}
+.contact-us-btn {
+    background-color: #6565EE;
+    color: #ffffff;
+    padding: 12px 16px !important;
+    border-radius: 8px;
+}
+.contact-us-btn:hover{
+    background-color: #6565EE;
+    color: #ffffff;
+    padding: 12px 16px !important;
+    border-radius: 8px;
+}
+.accordion-item  .accordion-collapse{
+    border-bottom:none;
+    }
+
+/* FAQs-section */
+
+/* our-solution-section-start*/
+.our-solution {
+    padding: 50px 0px;
+}
+.our-sol-tab {
+    text-align: -webkit-center;
+    border-radius: 10px;
+    background-color: #EDECF4;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.our-sol-tab a{
+    color: #53526f !important;
+}
+.our-sol-tab a:hover {
+    background-color: #ffffff;
+    color:#6565EE !important;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+.our-sol-tab a:active {
+    background-color: #ffffff;
+    color:#6565EE !important;
+}
+@media (max-width: 768px) {
+    .our-sol-tab .sol-btn{
+        margin-bottom: 30px!important;
+    }
+}
+/* our-solution-section-end*/
+
+/* latest-blog-section */
+
+.latest-blog-section {
+    padding: 50px 0px;
+    background-color: #F2F2F8;  
+}
+.latest-title h3{
+    color:#29273F;
+}
+.blog-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    height: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.view-blog-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 2px solid #6565EE;
+    color:#6565EE;
+    font-weight: 500;
+}
+.view-blog-btn:hover {
+    color:#6565EE;
+}
+.lb-tags {
+    display: flex;
+    margin: 15px 0px;
+}
+.lb-tags p{
+   color:#53526F;
+   background-color: #EDECF4;
+   margin: 0px 3px;
+   padding: 2px  10px;
+   border-radius: 16px;
+   font-size: 16px;
+}
+.blog-img {
+    text-align: -webkit-center;   
+}
+.blog-btn {
+    padding: 15px 0px;
+}
+.blog-title p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+}
+/* latest-blog-section */
+
+
+.client-review-section {
+    margin: 50px 0px;
+}
+.client-title h4{
+    color: #29273F;
+}
+.client-img  {
+  text-align: -webkit-center;
+}
+.client-img img {
+    margin: 0px 10px;
+}
+.client-card {
+    background-color: #F0F1FD;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.client-p {
+    font-weight: 500;
+}
+
+.records-management-section {
+    margin: 50px 0px;
+    
+}
+.records-management-section .records {
+    background-color: #6565EE;
+    border-radius: 16px;
+}
+.records .card-body {
+    color:#fff;
+} 
+.records-content {
+    align-content: center;
+    padding: 30px;
+}
+
+.rd-btn a{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    color:#6565EE;
+}
+.records-img { 
+    align-content: center;
+    text-align: right;
+    background-image: url("/assets/img/icon/Shapes.svg");
+
+}
+
+@media (max-width: 768px){
+    .records-management-section .records {
+       
+        padding: 40px;
+        text-align-last: center;
+    }
 }

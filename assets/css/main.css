@@ -120,7 +120,7 @@ h6 {
 
 .header .branding {
   min-height: 60px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .header .logo {
@@ -174,14 +174,15 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    
   }
 
   .navmenu a i,
@@ -295,7 +296,7 @@ h6 {
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -677,7 +678,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  right: 40px;
   bottom: 15px;
   z-index: 99999;
   background-color:#8484F1;
@@ -752,14 +753,14 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
-section,
+/* section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 118px;
   overflow: clip;
-}
+} */
 
 @media (max-width: 1199px) {
 
@@ -811,7 +812,7 @@ section,
   width: 100%;
   min-height: 75vh;
   position: relative;
-  padding: 60px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   /* background: url("../img/hero-bg.jpg") top left; */
@@ -845,8 +846,8 @@ section,
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 5px 0 30px 0;
-  font-size: 20px;
+  margin: 5px 0 10px 0;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -991,8 +992,8 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  --background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
-  padding: 50px 0;
+  
+  padding-bottom: 30px;
 }
 
 .clients .swiper {
@@ -1213,5 +1214,8 @@ section,
   }
 }
 
+#services {
+  padding: 50px 0px;
+}
 
 
