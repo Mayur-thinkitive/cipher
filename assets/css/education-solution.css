@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.testimonials-section {
+    padding: 70px 0px;
+    background-color: #282849;
+}
+.testimonioal-title h3 {
+    color:#fff;
+}
+.light-bule {
+    color:#B8B7F2;
+    font-weight:600 ;
+}
+.testimonial-footer p {
+    margin-bottom: 0px;
+    padding: 0px 10px;
+    color:#2A2A64;
+    font-weight: 500;
+}
+.testimonial-card .card-body {
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.card-footer {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    color: none;
+    background-color: #fff;
+    border-top: none;
+    padding: 0px;
+}
+.testimonial-card {
+    border-radius: 12px;
+}
+
+
+.adv-LMS-section h4 {
+        font-weight: 600;
+}
+
+
+.get-btn-footer {
+    border: 1px solid #6565EE;
+    color: #6565EE;
+    padding: 10px 30px !important;
+    border-radius: 8px;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+
+.get-btn-footer:hover {
+    color: #6565EE; 
+    font-weight: 700;
+}
+.request-btn-footer {
+    color: #ffffff;
+    background-color: #6565EE;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.request-btn-footer:hover {
+    color: #ffffff;
+    background-color: #6565EE;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.cp-content h4 {
+  font-weight: 600;
+}
+.education-solution {
+    background-color: #EBEBFF;
+    padding: 50px 0px;
+}
+.es-background {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    
+}
+.ed-img img {
+  width: 100%;
+}
+.cp-content p {
+    color:#27273F;
+    font-family: "Inter", sans-serif;
+}
+.services .service-item {
+    border: 0px solid 
+    color-mix(in srgb, var(--default-color), transparent 85%);
+    padding: 20px 20px;
+    /* transition: border ease-in-out 0.3s; */
+    height: 100%;
+    border-radius: 8px;
+}
+.set-tile h3 {
+    color:#29273F;
+    /* font-family: 700; */
+}
+.set-card p {
+    color:#3D3B54;
+}

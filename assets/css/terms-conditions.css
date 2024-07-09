@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.term-condition-section {
+    margin: 70px 0px;
+}
+.tb{
+  font-weight: 600;
+   color:#29273F;
+}
+body {
+    background-color: #F4F4FA;
+    font-family: "Inter", sans-serif;
+}
+
+.term-condition {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+}

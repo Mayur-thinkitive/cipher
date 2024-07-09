@@ -8,8 +8,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
-  <link href="./assets/img/icon/fav-icon.svg" >
-  
+  <link href="./assets/img/icon/fav-icon.png" rel="icon">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -30,8 +30,42 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/home.css" rel="stylesheet">
+  <style>
+    .highlight {
+      color: #6565EE;
+      padding-left: 3px;
+      position: relative;
+      display: inline-block;
+      animation: slideIn 3s infinite;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+
+      10% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      90% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+    }
+  </style>
 </head>
+
 <body class="index-page">
+<main class="main">
+
   <header id="header" class="header sticky-top">
     <!-- <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center ">
@@ -51,7 +85,7 @@
             <li class="dropdown"><a href="#"><span>Solution</span> <i
                   class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Education Solution</a></li>
+                <li><a href="./education-solution.html">Education Solution</a></li>
                 <!-- <li class="dropdown"><a href="#"><span>Solution</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="#">Deep Dropdown 1</a></li>
@@ -79,24 +113,32 @@
     </div>
   </header>
 
-  <main class="main">
+
     <!-- slider Section -->
     <section id="hero" class="slider hero section ">
       <div class="container">
         <div class="row gy-4 slider-content">
-          <div class="col-lg-5 col-md-5 col-sm-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h1>The complete EHR system for your <span>Patient Care</span></h1>
+            <!-- <h1>
+              <span class="header-text">The complete EHR system </span>
+              <span class="header-text primary">For your</span>
+              <span class="header-text highlight" id="dynamicText">Patient Care</span>
+              
+          </h1> -->
+
             <p>Welcome to Cipher Technology and Consulting where innovation meets excellence in healthcare automation.
             </p>
-            <div class="col-md-10 slider-img mb-3">
-              <div class="col-sm-3 col-md-3 col-sm-6  p-2 slider-icon"><img src="./assets/img/slider/hipaa.png" alt="hipaa">
-              </div>
-              <div class="col-sm-3 col-md-3 col-sm-6  p-2 slider-icon"><img src="./assets/img/slider/hitrust.png" alt="hitrust">
-              </div>
-              <div class="col-sm-3 col-md-3 col-sm-6 p-2 slider-icon"><img src="./assets/img/slider/stars.png" alt="stars"></div>
+            <div class="col-md-10 slider-img mb-2">
+              <div class="col-sm-2 col-sm-3 col-md-3  slider-icon"><img src="./assets/img/slider/hipaa.svg"
+                  class="img-fluid" alt="hitrust"></div>
+              <div class="col-sm-3 col-sm-3 col-md-3  p-2 slider-icon "><img src="./assets/img/slider/hitrust.svg"
+                  class="img-fluid" alt="hitrust"></div>
+              <div class="col-sm-4 col-sm-4 col-md-3  p-2 slider-icon"><img src="./assets/img/slider/star.svg"
+                  class="img-fluid" alt="hipaa"></div>
             </div>
-            <div class="d-flex mb-2">
-              <a class="get-btn" href="#">Get Start Free</a>
+            <div class="d-flex mb-2 mt-2">
+              <a class="get-btn" href="#">Get Started Free</a>
               <a class="request-btn" href="#">Request Demo&nbsp; <img src="./assets/img/icon/circle.svg"
                   alt="circle"></a>
             </div>
@@ -106,21 +148,21 @@
             </div>
           </div>
           <div
-            class="col-lg-7 col-md-7 col-sm-12 order-2 order-lg-1 d-flex flex-column justify-content-center slider-gif">
+            class="col-lg-6 col-md-6 col-sm-12 order-2 order-lg-1 d-flex flex-column justify-content-center slider-gif">
             <img src="/assets/img/gif/slider.gif" alt="slider-gif">
           </div>
         </div>
       </div>
-      <div id="chat-icon">
+      <!-- <div id="chat-icon">
         <img src="./assets/img/icon/chat-icon.svg" alt="chat-icon">
-      </div>
+      </div> -->
     </section><!-- /silder Section -->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section">
       <div class="container">
         <div class="trust-title">
-          <h2 class="text-center mt-3 mb-2"><b>They Trust us</b></h2>
+          <h2 class="text-center mt-3 mb-2">They Trust us</h2>
           <h6 class="text-center  mb-4">Trusted By 2400+ Clients &nbsp;<img src="./assets/img/icon/star.svg"
               alt="star-icon"></h6>
         </div>
@@ -128,9 +170,9 @@
           <script type="application/json" class="swiper-config">
               {
                 "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 0
+                "speed": 2000,
+                "autoplay": { 
+                  "delay": 2000
                 },
                 "slidesPerView": "auto",
                 "pagination": {
@@ -177,7 +219,7 @@
       <div class="container why-section">
         <div class="">
           <div class="col-md-12 mb-5 cipher-title">
-            <h3 class="mb-3"><b>Why Choose Cipher?</b></h3>
+            <h2 class="mb-3">Why Choose Cipher?</h2>
             <p>At Cipher, support means giving you the tools and knowledge you need.</p>
           </div>
           <div class="row col-md-12">
@@ -230,86 +272,200 @@
 
     <!-- Why Choose Cipher section end-->
 
+    <!-- feature-section start -->
+    <section class="feature-section">
+      <div class="container">
+        <div class="feature-title mb-5">
+          <h2 class="text-center mt-3 mb-2">Features</h2>
+          <h5 class="text-center  mb-4">Our solutions leverage the latest technology to ensure an exceptional user
+            experience</h5>
+        </div>
+        <div class="row feature-accordion">
+          <div class="col-md-6 mb-3">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <img src="./assets/img/icon/arrow.svg" alt="arrow">
+                    <div class="feature-p"><b>User-Friendly Interface</b>
+                      <p>Intuitive and easy to navigate.</p>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Navigate effortlessly with an intuitive design that simplifies access to educational materials and
+                    administrative functions. Our interface is designed to minimize learning curves, ensuring educators
+                    and students can focus on content rather than navigating complex systems.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img src="./assets/img/icon/arrow.svg" alt="arrow">
+                    <div class="feature-p"><b> Customizable Content</b>
+                      <p>Create and personalize content easily.</p>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Empower your educators with the ability to create and customize content effortlessly. Our platform
+                    offers intuitive tools that facilitate the creation of tailored educational materials, allowing
+                    educators to adapt content to specific learning needs and preferences quickly.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <img src="./assets/img/icon/arrow.svg" alt="arrow">
+                    <div class="feature-p"><b>Interactive Tools</b>
+                      <p>Engage with quizzes, forums, and multimedia.</p>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Immerse your educational experience with a range of interactive tools designed to foster engagement
+                    and collaboration. Our platform integrates quizzes, discussion forums, and multimedia features
+                    seamlessly, enhancing learning dynamics and encouraging active participation.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="#collapseFour">
+                    <img src="./assets/img/icon/arrow.svg" alt="arrow">
+                    <div class="feature-p"><b>Comprehensive Analytics</b>
+                      <p>Track progress and inform decisions.</p>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Gain valuable insights into educational performance and trends with our comprehensive analytics
+                    tools. Monitor student progress, assess learning outcomes, and make informed decisions based on
+                    real-time data. Our analytics empower educators and administrators to optimize teaching strategies,
+                    enhance student support.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="#collapseFive">
+                    <img src="./assets/img/icon/arrow.svg" alt="arrow">
+                    <div class="feature-p"><b>Secure and Scalable</b>
+                      <p>Prioritize data security and scalability.</p>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Ensure peace of mind with robust data security measures and scalable infrastructure. Our platform is
+                    designed with stringent security protocols to safeguard sensitive information and ensure compliance
+                    with privacy regulations and our scalable architecture supports seamless growth.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6" style="text-align: right;">
+            <img src="./assets/img/feature/feature-img.svg" class="img-fluid" alt="feature-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature-section end -->
+
     <!-- Our Solutions Sections start -->
-    <!-- <section class="our-solution" id="Usecases">
+    <section class="our-solution" id="Usecases">
       <div class="container">
         <div class="trust-title">
-          <h2 class="text-center mt-3 mb-2"><b>Our Solutions</b></h2>
-          <h6 class="text-center  mb-4">Cipher Technology and Consulting offers specialized solutions for various
-            sectors</h6>
+          <h2 class="text-center mt-3 mb-2">Our Solutions</h2>
+          <h5 class="text-center  mb-4">Cipher Technology and Consulting offers specialized solutions for various
+            sectors</h5>
         </div>
         <div class="main-feature mt-5">
           <div class="row feature-links our-sol-tab">
-            
+
             <div class="col-md-2 col-sm-6 bg-cls-G sol-btn">
-              <a href="#" class="btn-block btn-link-1" onclick="showFeature(1); return false;">EIDBI Services</a>
+              <a href="#" class="btn-block btn-link-1 active-link tab" onclick="showFeature(1 , this , 'main-feature1' ); return false;">EIDBI Services</a>
             </div>
-            <div class="col-md-2 col-sm-6 bg-cls-Y sol-btn">
-              <a href="#" class="btn-block btn-link-2" onclick="showFeature(2); return false;">245D Agencies</a>
+            <div class="col-md-2 col-sm-6 bg-cls-Y sol-btn tab">
+              <a href="#" class="btn-block btn-link-2" onclick="showFeature(2 , this , 'main-feature1'); return false;">245D Agencies</a>
             </div>
-            <div class="col-md-3 col-sm-6 bg-cls-B sol-btn">
-              <a href="#" class="btn-block btn-link-3" onclick="showFeature(3); return false;">Personal Care Agency</a>
+            <div class="col-md-3 col-sm-6 bg-cls-B sol-btn tab">
+              <a href="#" class="btn-block btn-link-3" onclick="showFeature(3 , this , 'main-feature1'); return false;">Personal Care Agency</a>
             </div>
-            <div class="col-md-3 col-sm-6 bg-cls-R sol-btn">
-              <a href="#" class="btn-block btn-link-4" onclick="showFeature(4); return false;">Adult Day Service
+            <div class="col-md-3 col-sm-6 bg-cls-R sol-btn tab">
+              <a href="#" class="btn-block btn-link-4" onclick="showFeature(4 , this , 'main-feature1'); return false;">Adult Day Service
                 Solution</a>
             </div>
-            <div class="col-md-2 col-sm-6 bg-cls-R sol-btn">
-              <a href="#" class="btn-block btn-link-4" onclick="showFeature(5); return false;">Cipher Schoology</a>
+            <div class="col-md-2 col-sm-6 bg-cls-R sol-btn tab">
+              <a href="#" class="btn-block btn-link-4" onclick="showFeature(5 , this , 'main-feature1'); return false;">Cipher Schoology</a>
             </div>
           </div>
-          
+
           <div class="features">
-           
+
             <div id="feature1" class="feature">
               <div class="row">
-                <div class="col-md-6 ">
-                  <h4 class="blue-color mb-3">Personal Care Agency</h4>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Support Early Intensive
+                <div class="col-md-6 mb-4">
+                  <h4 class="blue-color mb-3">EIDBI Services</h4>
+                  <p>Support Early Intensive
                     Developmental Behavioral Intervention (EIDBI) providers with comprehensive care management
                     tools:</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Create and customize
                     individualized treatment plans.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Monitor client progress
                     and outcomes effectively.</p>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Monitor client progress
-                    and outcomes effectively.</p>
-                  <a href="" class="mt-3">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
+                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Ensure compliance and
+                    streamline reimbursement processes.</p>
+                  <a href="" class="mt-3 learn-more">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
                       alt="arrow_outward"></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="image1.jpg" class="img-fluid" alt="Feature Image 1">
+                  <img src="./assets/img/solution/edbi.svg" class="img-fluid" alt="Feature Image 1">
                 </div>
               </div>
             </div>
-           
+
             <div id="feature2" class="feature" style="display: none;">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6 mb-4">
                   <h4 class="blue-color mb-3">245D Agencies</h4>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; 245D Home and
+                  <p>245D Home and
                     Community-Based Services (HCBS) streamlines operations, enhances care coordination and improves
                     client outcomes for providers.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Centralized platform for
                     detailed client profiles.</p>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; MIntuitive interface for
+                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Intuitive interface for
                     creating and updating individual service plans.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Integrated tool for
                     efficient management of appointments.</p>
-                  <a href="" class="mt-3">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
+                  <a href="" class="mt-3 learn-more">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
                       alt="arrow_outward"></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="image1.jpg" class="img-fluid" alt="Feature Image 1">
+                  <img src="./assets/img/solution/agencies.svg" class="img-fluid" alt="Feature Image 1">
                 </div>
               </div>
             </div>
-           
+
             <div id="feature3" class="feature" style="display: none;">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6 mb-4">
                   <h4 class="blue-color mb-3">Personal Care Agency</h4>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Personal Care Agency our
+                  <p>Personal Care Agency our
                     robust software simplifies complex processes, letting you focus on quality care.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Easily manage profiles,
                     care plans, and schedules for personalized care.</p>
@@ -317,42 +473,41 @@
                     an intuitive interface for optimal coverage.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Ensure compliance with
                     accurate visit tracking and accountability.</p>
-                  <a href="" class="mt-3">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
+                  <a href="" class="mt-3 learn-more">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
                       alt="arrow_outward"></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="image1.jpg" class="img-fluid" alt="Feature Image 1">
+                  <img src="./assets/img/solution/agency.svg" class="img-fluid" alt="Feature Image 1">
                 </div>
               </div>
             </div>
-            
+
             <div id="feature4" class="feature" style="display: none;">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6 mb-4">
                   <h4 class="blue-color mb-3">Adult Day Service Solution</h4>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Support Early Intensive
-                    Developmental Behavioral Intervention (EIDBI) providers with comprehensive care management
-                    tools:</p>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Create and customize
-                    individualized treatment plans.</p>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Monitor client progress
-                    and outcomes effectively.</p>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Monitor client progress
-                    and outcomes effectively.</p>
-                  <a href="" class="mt-3">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
+                  <p>Adult Day Services Providers simplifies administration, improves client care, and boosts
+                    communication for the providers.</p>
+                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Maintain detailed client
+                    profiles.</p>
+                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Effortlessly plan and
+                    manage daily schedules.</p>
+                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Accurately monitor client
+                    attendance and participation in activities.</p>
+                  <a href="" class="mt-3 learn-more">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
                       alt="arrow_outward"></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="image1.jpg" class="img-fluid" alt="Feature Image 1">
+                  <img src="./assets/img/solution/adult-day.svg" class="img-fluid" alt="Feature Image 1">
                 </div>
               </div>
             </div>
-            
+
             <div id="feature5" class="feature" style="display: none;">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6 mb-4">
                   <h4 class="blue-color mb-3">Cipher Schoology</h4>
-                  <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; School administration
+                  <p>School administration
                     software that streamlines processes and enhances communication simplify.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; We ensure you have the
                     tools and knowledge to thrive.</p>
@@ -360,22 +515,22 @@
                     our priority, ensuring customers are delighted.</p>
                   <p><img src="./assets/img/icon/check-circle.svg" alt="check_circle">&nbsp; Foster a collaborative
                     innovative environment</p>
-                  <a href="" class="mt-3">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
+                  <a href="" class="mt-3 learn-more">Learn More &nbsp; <img src="./assets/img/icon/arrow_outward.svg "
                       alt="arrow_outward"></a>
                 </div>
                 <div class="col-md-6">
-                  <img src="image1.jpg" class="img-fluid" alt="Feature Image 1">
+                  <img src="./assets/img/solution/schoology.svg" class="img-fluid" alt="Feature Image 1">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Our Solutions Sections end -->
     <!-- FAQs section Start-->
-    <section class="FAQs-section">
+    <section class="FAQs-section">  
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -387,15 +542,15 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample2">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                    aria-expanded="true" aria-controls="collapseSix">
                     What is EMR Software?
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapseSix" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
                   <div class="accordion-body">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tempus aliquet. Pellentesque
                     finibus, est et iaculis suscipit, dolor nulla commodo dui, nec ultricies arcu nisl tristique eros.
@@ -410,11 +565,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                     What is EMR software development?
                   </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
                   <div class="accordion-body">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tempus aliquet. Pellentesque
                     finibus, est et iaculis suscipit, dolor nulla commodo dui, nec ultricies arcu nisl tristique eros.
@@ -429,11 +584,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                     How do I create my own EMR?
                   </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
                   <div class="accordion-body">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tempus aliquet. Pellentesque
                     finibus, est et iaculis suscipit, dolor nulla commodo dui, nec ultricies arcu nisl tristique eros.
@@ -448,11 +603,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="#collapseFour">
+                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="#collapseNine">
                     How can a telehealth app help me manage appointments and engage with patients?
                   </button>
                 </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
                   <div class="accordion-body">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tempus aliquet. Pellentesque
                     finibus, est et iaculis suscipit, dolor nulla commodo dui, nec ultricies arcu nisl tristique eros.
@@ -467,11 +622,11 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="#collapseFive">
+                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="#collapseTen">
                     Can provider schedule video consultations with the platform?
                   </button>
                 </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
                   <div class="accordion-body">
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tempus aliquet. Pellentesque
                     finibus, est et iaculis suscipit, dolor nulla commodo dui, nec ultricies arcu nisl tristique eros.
@@ -489,6 +644,7 @@
         </div>
       </div>
     </section>
+
     <!-- FAQs section end-->
 
     <!-- latest-blog-sections-start -->
@@ -514,7 +670,7 @@
               </div>
               <div class="blog-btn">
                 <a href="" class="view-blog-btn mt-3">View Blogs<img src="./assets/img/icon/arrow_outward.svg "
-                  alt="arrow_outward"></a>
+                    class="img-fluid" alt="arrow_outward"></a>
               </div>
             </div>
           </div>
@@ -532,7 +688,7 @@
               </div>
               <div class="blog-btn">
                 <a href="" class="view-blog-btn mt-3">View Blogs<img src="./assets/img/icon/arrow_outward.svg "
-                  alt="arrow_outward"></a>
+                    class="img-fluid" alt="arrow_outward"></a>
               </div>
             </div>
           </div>
@@ -550,7 +706,7 @@
               </div>
               <div class="blog-btn">
                 <a href="" class="view-blog-btn mt-3">View Blogs<img src="./assets/img/icon/arrow_outward.svg "
-                  alt="arrow_outward"></a>
+                    class="img-fluid" alt="arrow_outward"></a>
               </div>
             </div>
           </div>
@@ -568,22 +724,27 @@
               </div>
               <div class="blog-btn">
                 <a href="" class="view-blog-btn mt-3">View Blogs<img src="./assets/img/icon/arrow_outward.svg "
-                  alt="arrow_outward"></a>
+                    class="img-fluid" alt="arrow_outward"></a>
               </div>
             </div>
+          </div>
+          <div class="text-center pt-4 mb-2">
+            <a class="contact-us-btn mb-5 view-blog" href="#">View All Blogs</a>
           </div>
         </div>
     </section>
     <!-- latest-blog-sections-end -->
 
-        <!-- client-review-sections-start -->
-        <section class="client-review-section">
-          <div class="container">
-            <div class="row">
-              <div class="client-title mb-3">
-                <h4 class="text-center"><img src="./assets/img/icon/star.svg" alt=""><b>&nbsp;Based on 2400+ Reviews on</b></h4>
-               
-                  <!-- <div class="col-sm-2">
+    <!-- client-review-sections-start -->
+    <section class="client-review-section">
+      <div class="container">
+        <div class="row">
+          <div class="client-title mb-3">
+            <h3 class="text-center mb-4"><img src="./assets/img/icon/review-star.svg" alt="">&nbsp;Based on 2400+
+              Reviews on
+            </h3>
+
+            <!-- <div class="col-sm-2">
                     <img src="./assets/img/client-review/crowd.svg" alt="crowd">
                   </div>
                   <div class="col-sm-2">
@@ -592,76 +753,89 @@
                   <div class="col-sm-2">
                     <img src="./assets/img/client-review/trustpilot.svg" alt="trustpilot">
                   </div> -->
-                  <div class="client-img mt-3 mb-4">
-                    <img src="./assets/img/client-review/crowd.svg" alt="crowd">
-                    <img src="./assets/img/client-review/capterra.svg" alt="capterra">      
-                    <img src="./assets/img/client-review/trustpilot.svg" alt="trustpilot">
-                  </div>
-              </div>
+            <div class="client-img mt-3 mb-5">
+              <img src="./assets/img/client-review/crowd.svg" alt="crowd">
+              <img src="./assets/img/client-review/capterra.svg" alt="capterra">
+              <img src="./assets/img/client-review/trustpilot.svg" alt="trustpilot">
             </div>
-            <div class="row gy-4">
-              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
-                <div class="client-card  position-relative ">
-                 <img class="mb-4" src="./assets/img/client-review/star.svg" alt="star">
-                 <p class="mb-4 client-p">Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.</p>
-                 <p style="display: grid;"><b style="color:#293342;">Hellen Jummy </b>  <span style="color:#727397;"></span>Practitioner</p>
-                 <p>Sourced from <span style="text-decoration: underline;">Trustpilot</span></p>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
-                <div class="client-card  position-relative ">
-                  <img class="mb-4" src="./assets/img/client-review/star.svg" alt="star">
-                 <p class="mb-4 client-p">Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.</p>
-                 <p style="display: grid;"><b style="color:#293342;">Hellen Jummy </b>  <span style="color:#727397;"></span>Practitioner</p>
-                 <p>Sourced from <span style="text-decoration: underline;">Trustpilot</span></p>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
-                <div class="client-card  position-relative ">
-                  <img class="mb-4" src="./assets/img/client-review/star.svg" alt="star">
-                 <p class="mb-4 client-p">Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.</p>
-                 <p style="display: grid;"><b style="color:#293342;">Hellen Jummy </b>  <span style="color:#727397;"></span>Practitioner</p>
-                 <p>Sourced from <span style="text-decoration: underline;">Trustpilot</span></p>
-                </div>
-              </div>
-  
-            </div>
-        </section>
-        <!-- latest-blog-sections-end -->
-        <section class="records-management-section">
-          <div class="container records">
-              <div class="row col-md-12 ">
-                  <div class="col-md-6 records-content">
-                      <div class="card-body">
-                          <h3 class="card-title mb-2"><b>Transform Your Medical Records Management  </b></h3>
-                          <p class="card-text mb-4" style="color:#fff">Efficient, Secure, and User-Friendly EMR/EHR Software Tailored for Your Needs</p>
-                      </div>
-                  </div>
-                  <div class="col-md-6 records-img" >
-                      <!-- <img src="./assets/img/icon/Shapes.svg" alt="hook-banner-circle"> -->
-                       <div class="rd-btn">
-                          <a href=""class="">Request  Demo <img src="./assets/img/icon/arrow_outward.svg "
-                            alt="arrow_outward"></a>
-                       </div>
-                  </div>
-              </div>
           </div>
-        </section>
+        </div>
+        <div class="row gy-4">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+            <div class="client-card  position-relative ">
+              <img class="mb-4" src="./assets/img/client-review/star.svg" alt="star">
+              <p class="mb-4 client-p">Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue
+                nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus
+                consectetur mi.</p>
+              <p style="display: grid;"><b style="color:#293342;">Hellen Jummy </b> <span
+                  style="color:#727397;"></span>Practitioner</p>
+              <p>Sourced from <span style="text-decoration: underline;"><a href="https://www.trustpilot.com/"
+                    target=”_blank”>Trustpilot</a></span></p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+            <div class="client-card  position-relative ">
+              <img class="mb-4" src="./assets/img/client-review/star.svg" alt="star">
+              <p class="mb-4 client-p">Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue
+                nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus
+                consectetur mi.</p>
+              <p style="display: grid;"><b style="color:#293342;">Hellen Jummy </b> <span
+                  style="color:#727397;"></span>Practitioner</p>
+              <p>Sourced from <span style="text-decoration: underline;"><a href="https://www.trustpilot.com/"
+                    target=”_blank”>Trustpilot</a></span></p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+            <div class="client-card  position-relative ">
+              <img class="mb-4" src="./assets/img/client-review/star.svg" alt="star">
+              <p class="mb-4 client-p">Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue
+                nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus
+                consectetur mi.</p>
+              <p style="display: grid;"><b style="color:#293342;">Hellen Jummy </b> <span
+                  style="color:#727397;"></span>Practitioner</p>
+              <p>Sourced from <span style="text-decoration: underline; "><a href="https://www.trustpilot.com/"
+                    target=”_blank”>Trustpilot</a></span></p>
+            </div>
+          </div>
 
-  </main>
+        </div>
+    </section>
+    <!-- latest-blog-sections-end -->
+
+    <section class="records-management-section">
+      <div class="container records">
+        <div class="row col-md-12 ">
+          <div class="col-md-6 records-content">
+            <div class="card-body">
+              <h2 class="card-title mb-2"><b>Transform Your Medical Records Management </b></h2>
+              <p class="card-text mb-4" style="color:#fff">Efficient, Secure, and User-Friendly EMR/EHR Software
+                Tailored for Your Needs</p>
+            </div>
+          </div>
+          <div class="col-md-6 records-img">
+            <!-- <img src="./assets/img/icon/Shapes.svg" alt="hook-banner-circle"> -->
+            <div class="rd-btn">
+              <a href="" class="">Request Demo <img src="./assets/img/icon/arrow_outward.svg " alt="arrow_outward"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</main>
 
   <footer id="footer" class="footer ">
     <div class="logo-content-section pt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4 footer-logo mb-3">
-            <img src="/assets/img/footer-logo.svg" alt="">
+            <a href="/index.html"><img src="/assets/img/footer-logo.svg" alt=""></a>
           </div>
           <div class="col-md-8">
             <p class="ftl-content">At Cipher Technology and Consulting, we are committed to providing you with the tools
               and support you need
               to succeed. Explore our resources and let us know how we can assist you further.</p>
-            <img src="./assets/img/icon/footer-icon.svg" alt="">
+            <img src="./assets/img/icon/footer-icon.svg" alt="footer-icon">
             <!-- <div class="footer-img mb-3">
               <img src="assets/img/footer/fl1.svg" alt="fl1">
               <img src="assets/img/footer/fl3.svg" alt="fl3">
@@ -711,7 +885,19 @@
           <h4 class="blue-color mb-1">SUBSCRIBE TO OUR NEWSLETTER</h4>
           <p>Sign up for our newsletter for updates and offers. At Cipher Technology and Consulting, we're here to help
             you succeed</p>
-          <div class="Address-content">
+
+          <div class="newsletter-form"><input type="email" name="email" placeholder="&nbsp;Enter Your Email" style="padding: 10px 15px;
+            border-radius: 8px;
+            margin-right: 15px; margin-bottom: 10px;">
+            <input type="submit" class="Subscribe-btn" value="Subscribe" style="padding: 10px 15px;
+            border-radius: 8px;
+             background-color: #6565EE;color:#fff">
+          </div>
+          <!-- <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div> -->
+
+          <div class="Address-content mt-3">
             <p><i class="fas fa-envelope me-3"> </i><a class="white-color"
                 href="mailto:info@ciphertc.com">info@ciphertc.com</a></p>
             <p><i class="fas fa-phone me-3"> </i><a class="white-color" href="tel:763 393 0354">763 393 0354</a></p>
@@ -728,7 +914,8 @@
             class="text-reset fw-bold blue-color" target=”_blank” href="https://www.thinkitive.com/">Thinkitive</a>
         </div>
         <div class="col-md-4 mb-2 text-center">
-          Terms & Conditions | Privacy Policy | Site Map
+          <a href="./terms-conditions.html"> Terms & Conditions </a>|<a href="./privacy-policy.html"> Privacy Policy
+          </a>|<a href="./sitemap.html">Site Map</a>
         </div>
         <div class="col-md-2 social-con mb-2 social-links-cls">
           <i class="fa-brands fa-tiktok"></i>
@@ -766,6 +953,9 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/home.js"></script>
+  <script src="assets/js/education-solution.js"></script>
+
+
 
 </body>
 

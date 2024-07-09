@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
-  font-family:"Poppins" ;
+  font-family:"Poppins" ; 
 }
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -128,7 +128,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  height: 40px;
   margin-right: 8px;
 }
 
@@ -173,7 +173,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 15px;
+    padding: 18px 25px;
     font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 600;
@@ -293,7 +293,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-family: var(--nav-font);
     font-size: 17px;
     font-weight: 600;
@@ -808,16 +808,7 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  min-height: 75vh;
-  position: relative;
-  padding: 50px 0;
-  display: flex;
-  align-items: center;
-  /* background: url("../img/hero-bg.jpg") top left; */
-  background-size: cover;
-}
+
 
 .hero:before {
   content: "";
@@ -836,8 +827,10 @@ h6 {
 .hero h1 {
   margin: 0;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-weight: 600;
+  line-height: 50px;
+  padding-right:20px;
+  font-family: "Inter", sans-serif;
 }
 
 .hero h1 span {
@@ -1039,7 +1032,6 @@ h6 {
 .services .service-item .icon i {
   color: var(--contrast-color);
   font-size: 28px;
-  transition: ease-in-out 0.3s;
 }
 
 .services .service-item h3 {
@@ -1055,13 +1047,7 @@ h6 {
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
-  border-color: var(--accent-color);
-}
 
-.services .service-item:hover h3 {
-  color: var(--accent-color);
-}
 
 
 /*--------------------------------------------------------------
@@ -1214,8 +1200,5 @@ h6 {
   }
 }
 
-#services {
-  padding: 50px 0px;
-}
 
 
